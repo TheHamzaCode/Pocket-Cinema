@@ -1,0 +1,101 @@
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.upload-container {
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 3rem;
+    border: 2px dashed var(--border-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.upload-container.drag-active {
+    border-color: var(--accent-blue);
+    background-color: rgba(37, 99, 235, 0.1);
+}
+
+.upload-btn {
+    background-color: var(--accent-blue);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.upload-info {
+    color: var(--secondary-text);
+    font-size: 0.875rem;
+}
+
+.live-container {
+    height: 400px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.stream-setup, .stream-settings {
+    height: 250px;
+    width: 300px;
+    background-color: var(--secondary-bg);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.live-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-red);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    color: var(--primary-text);
+}
+
+@media (max-width: 768px) {
+    .live-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-tabs {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+}

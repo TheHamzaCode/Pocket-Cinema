@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Cinema</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/tabs.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Pocket Cinema</h1>
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-tab="home">
+                    <i class="icon-home"></i>Home
+                </button>
+                <button class="nav-tab" data-tab="ai">
+                    <i class="icon-brain"></i>AI
+                </button>
+                <button class="nav-tab" data-tab="upload">
+                    <i class="icon-upload"></i>Upload
+                </button>
+                <button class="nav-tab" data-tab="playlist">
+                    <i class="icon-playlist"></i>Playlist
+                </button>
+                <button class="nav-tab" data-tab="live">
+                    <i class="icon-live"></i>Live Stream
+                </button>
+            </div>
+            <button class="login-btn">
+                <i class="icon-login"></i>Login
+            </button>
+        </div>
+    </nav>
+    
+
+
+            <div id="particles-js"></div> 
+            <div class="count-particles"> <span class="js-count-particles">
+            </span> 
+            
+            <main class="main-content">
+          
+            <div class="tab-content active" id="home">
+                <h2>Trending Videos</h2>
+                <div class="video-grid" id="videoGrid"></div>
+            </div>
+
+        <div class="tab-content" id="ai">
+            <div class="ai/container">
+                <h2>AI-Powered Recommendations</h2>
+                <p class="description">Get personalized video recommendations based on your interests and viewing history.</p>
+                <div class="search-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search for videos..." class="search-input">
+                </div>
+                <div class="interests-container">
+                    <h3>Your Interests</h3>
+                    <div class="tags">
+                        <span class="tag">Programming</span>
+                        <span class="tag">Web Development</span>
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Gaming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="upload">
+            <h2>Upload Video</h2>
+            <div class="upload-container" id="dropZone">
+                <i class="icon-upload-large"></i>
+                <h3>Drag and drop your video here</h3>
+                <p>or</p>
+                <button class="upload-btn">Select File</button>
+                <p class="upload-info">Maximum file size: 2GB. Supported formats: MP4, AVI, MOV</p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="playlist">
+            <h2>Your Playlists</h2>
+            <div class="playlist-grid" id="playlistGrid"></div>
+        </div>
+
+        <div class="tab-content" id="live">
+            <div class="aicontainer">
+                <h2>Live Streaming</h2>
+                <div class="live-container">
+                    <div class="stream-setup">
+                        <h3>Start Streaming</h3>
+                        <p>Share your content with viewers around the world.</p>
+                        <button class="live-btn">
+                            <i class="icon-live"></i>Go Live Now
+                        </button>
+                    </div>
+                    <div class="stream-settings">
+                        <h3>Stream Settings</h3>
+                        <div class="settings-form">
+                            <div class="form-group">
+                                <label>Stream Title</label>
+                                <input type="text" placeholder="Enter your stream title">
+                            </div>
+                            <div class="form-group">
+                                <label>Category</label>
+                                <select>
+                                    <option>Gaming</option>
+                                    <option>Just Chatting</option>
+                                    <option>Music</option>
+                                    <option>Education</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                  </div>             
+              </div>
+        </div>
+    </main> </div>
+                
+
+            <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+            </div> 
+
+    
+
+    <script src="js/icons.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/main.js"></script>
+</div> </body>
+</html>
